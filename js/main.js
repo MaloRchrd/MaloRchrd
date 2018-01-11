@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		{
 		title:"Switch up challenge",
 		imgName: "suc.png",
-		description:"Switch Up Challenge is a social entrepreneurship contest to help socil tech startups to start and rise up" ,
+		description:"Switch Up Challenge is a social entrepreneurship contest to help social tech startups to start & rise up. Organized by Makesense" ,
 		tag:'wordpress',
 		url:'http://switchupchallenge.com/'
 		},
