@@ -278,7 +278,9 @@ p{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 5px;
-	min-width: 100%;
+	max-width: 320px;
+	min-width: 225px;
+	width: 320px;
 	background-color: transparent;
 	border: 2px solid #fff;
 	color: #fff;
@@ -290,7 +292,9 @@ p{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 5px;
-	min-width: 100%;
+	max-width: 320px;
+	min-width: 225px;
+	width: 320px;
 	background-color: transparent;
 	border: 2px solid #fff;
 	color: #fff;
@@ -300,14 +304,20 @@ p{
 ::placeholder {
   color: #fff;
   font-size: 1.5em;
-  min-width: 100%;
+  max-width: 320px;
+  min-width: 225px;
 }
 
 #send{
+	padding: 10px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	font-size: 1.5em;
 	background-color: transparent;
 	border: 2px solid #fff;
 	color: #fff;
+	width: 320px;
 }
 #send:hover{
 	background-color:#fff;
@@ -360,6 +370,11 @@ p{
 	.filter_btn{
 		font-size: 12px;
 		padding: 4px 9px;
+	}
+	#contact> textarea,#contact> input, #send{
+		min-width: 225px;
+		max-width: 225px;
+		width: 225px;
 	}
 
 

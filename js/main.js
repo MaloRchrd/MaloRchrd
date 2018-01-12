@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// contact
 	envelope.addEventListener('click',function (e) {
 		e.preventDefault();
-		contact.style.display='inline-grid';
+		contact.style.display='block';
 		main.style.display='none';
 	});
 
