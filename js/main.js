@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var wordpress = document.getElementById('wordpress');
 	var ecommerce = document.getElementById('ecommerce');
 	var javascript = document.getElementById('javascript');
+	var contact = document.getElementById('contact');
+	var envelope = document.getElementById('envelope');
+	var send = document.getElementById('send');
+	var success = document.getElementById('success');
+	var main = document.getElementById('main');
+	var airtable_write_endpoint = "https://api.airtable.com/v0/applTybfwLLcj5op7/contact?api_key=keyy91JVw4nn9lwqH";
 
 
 	// Factory function to build cards
@@ -130,6 +136,43 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		createCards('javascript');
 	});
 
+
+	// contact
+	envelope.addEventListener('click',function (e) {
+		e.preventDefault();
+		contact.style.display='inline-grid';
+		main.style.display='none';
+	});
+
+	send.addEventListener('click',function (e) {
+		e.preventDefault();
+		var inputName = document.getElementById('inputName').value;
+		var inputEmail = document.getElementById('inputEmail').value;
+		var inputMessage = document.getElementById('inputMessage').value;
+		//<i class="fas fa-sync fa-spin"></i>
+		send.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending';
+		console.log(inputName,inputEmail,inputMessage);
+		axios.post(airtable_write_endpoint ,  {
+		    "fields": {
+				"Name": inputName,
+		        "email": inputEmail,
+		        "message": inputMessage
+			}
+		}).then(function(response) {
+		    // give it a little bit for data to hit AirTable
+			console.log(response);
+		    contact.style.display='none';
+		    success.style.display='block';
+			setTimeout(function () {
+				success.style.display='none';
+				main.style.display='block';
+				send.innerHTML = 'Send';
+			}, 1000);
+		})
+
+
+	});
+
 	// open portfolio
 	work.addEventListener('click',function (e) {
 		e.preventDefault();
@@ -223,7 +266,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			close.style.display = "none";
 			profile.style.display = "none";
 			name.style.display = "none";
-
 			name.className = "name";
 		}, 600);
 
@@ -283,6 +325,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		break;
       };
     };
+
+
+// form
+
+
+
+
 
 
 });

@@ -3,6 +3,7 @@
 
 body{
 	background-image: linear-gradient(to left, #00c6fb 0%, #005bea 100%);
+	text-align: center;
 }
 
 h1,h2,h3,h4,h5,h6,p,a{
@@ -260,6 +261,64 @@ p{
 
 
 }
+
+
+
+/* contact form */
+
+#contact{
+	margin-top: 100px;
+	text-align: center;
+	display: none;
+}
+
+#contact> input{
+	padding: 10px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 5px;
+	min-width: 500px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 1.5em;
+}
+#contact> textarea{
+	padding: 10px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 5px;
+	min-width: 500px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 1.5em;
+  min-width: 500px;
+}
+
+#send{
+	font-size: 1.5em;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+#send:hover{
+	background-color:#fff;
+	border: 1px solid #21C4F8;
+	color: #21C4F8;
+}
+
+#success{
+	display: none;
+}
+
 /* mobile css */
 @media only screen and (max-width: 768px) {
 
