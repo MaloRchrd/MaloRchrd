@@ -278,9 +278,9 @@ p{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 5px;
-	min-width: 500px;
+	min-width: 100%;
 	background-color: transparent;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	color: #fff;
 	font-size: 1.5em;
 }
@@ -290,9 +290,9 @@ p{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 5px;
-	min-width: 500px;
+	min-width: 100%;
 	background-color: transparent;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	color: #fff;
 	font-size: 1.5em;
 }
@@ -300,13 +300,13 @@ p{
 ::placeholder {
   color: #fff;
   font-size: 1.5em;
-  min-width: 500px;
+  min-width: 100%;
 }
 
 #send{
 	font-size: 1.5em;
 	background-color: transparent;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	color: #fff;
 }
 #send:hover{
